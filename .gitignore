@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+.venv/        # Exclude the virtual environment folder
+venv/         # Another common name for virtual env
+*egg-info/
+.pytest_cache/
+
+# Data - Generated output and raw data not to be version controlled
+data/extracted_texts/ # Ignore processed text output
+data/embeddings/      # Ignore generated embeddings
+data/processed_chunks/
+*.db                  # Ignore database files (e.g., if ChromaDB creates a local DB file)
+*.pkl                 # Python pickle files
+*.csv                 # Output CSVs
+*.txt                 # Output TXTs
+
+# Models - Downloaded pre-trained models (often large)
+models/               # Ignore the entire models folder
+*.safetensors
+*.bin
+*.pt                  # PyTorch model files
+
+# Environment variables - Contains sensitive info
+.env
+*.env
+
+# VS Code specific
+.vscode/
+
+# OS Specific
+.DS_Store             # macOS
+Thumbs.db             # Windows
