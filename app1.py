@@ -330,7 +330,7 @@ async def hackrx_run_explain(
                 parsed = {
                     "decision": "Not specified",
                     "answer": "Not specified in the policy.",
-                    "rationale": "Insufficient or ambiguous context.",
+                    "rationale": "Insufficient or ambiguous context.", 
                 }
 
             results.append({
